@@ -1,5 +1,5 @@
 clear ;close all;clc;
- for i=1:15
+ for i=1:1
     view_num=3;
     % get data
     train_path1 = ['../data/Train/temp/all/temp',num2str(i,'%02d'),'.mat'];
@@ -31,15 +31,15 @@ clear ;close all;clc;
     clear Y ;
     
     
-    test_path1 = ['../data/Val/temp/all/temp',num2str(i,'%02d'),'.mat'];
+    test_path1 = ['../data/test/temp/all/temp',num2str(i,'%02d'),'.mat'];
     load(test_path1);
     X1_tar=X;
     
-    test_path2 = ['../data/Val/stat/all/stat',num2str(i,'%02d'),'.mat'];
+    test_path2 = ['../data/test/stat/all/stat',num2str(i,'%02d'),'.mat'];
     load(test_path2);
     X2_tar=X;
     
-    test_path3 =  ['../data/Val/spect/PSD/PSD',num2str(i,'%02d'),'.mat'];
+    test_path3 =  ['../data/test/spect/PSD/PSD',num2str(i,'%02d'),'.mat'];
     load(test_path3);
     X3_tar=X;
     

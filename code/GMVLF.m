@@ -32,7 +32,7 @@ betanums = [-2];
 deltanums = [0];
 lambdanums = [-3];
 % Default MaxIteration is 50;
-MaxIteration = 50;
+MaxIteration =50;
 Max_acc = 0;
 F_mean = ones(u,c)/c;
 F_new = [Y_l;F_mean];
@@ -127,11 +127,11 @@ for beta_index = 1:length(betanums)
                     BestIter = iter;
                 end
                 if(mod(iter,10)==1)
-                    fprintf('beta: %.4f delta:%.4f lambda: %.4f the best acc: %.4f,acc:%.4f  f_v:%.4f  \n',beta,delta,lambda,Max_acc,acc(iter),f_v(iter));
+                    fprintf('beta: %.4f delta:%.4f lambda: %.4f the best acc: %.4f \n',beta,delta,lambda,Max_acc);
                 end
             end
+            fprintf('BestBeta: %.4f BestDelta: %.4f BestLambda: %.4f the best acc: %.4f \n',BestBeta,BestDelta,BestLambda,Max_acc);
             fprintf('next\n');
-            fprintf('beta: %.4f delta: %.4f lambda: %.4f the best acc: %.4f \n',BestBeta,BestDelta,BestLambda,Max_acc);
         end
     end
     
