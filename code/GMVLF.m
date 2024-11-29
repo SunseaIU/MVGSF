@@ -28,9 +28,9 @@ function [Max_acc,BestBeta,BestDelta,BestLambda,BestAlpha,BestTheta,BestS,BestF_
 [u,~] = size(X_u);
 [~,view_num]=size(d);
 % set the parameter selection range to {2^-10, 2^-8,бн,2^10}
-betanums = [-2];
-deltanums = [0];
-lambdanums = [-3];
+betanums = [-10:10];
+deltanums = [-10:10];
+lambdanums = [-10:10];
 % Default MaxIteration is 50;
 MaxIteration =50;
 Max_acc = 0;
