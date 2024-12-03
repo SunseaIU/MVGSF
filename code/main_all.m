@@ -58,7 +58,7 @@ clear ;close all;clc;
     % process data
     [X,X_l,Y_l,X_u,Y_u,Y_index] = process_1(X_src,Y_src,X_tar,Y_tar,fea_num);
     % main program
-    [Max_acc,BestBeta,BestDelta,BestLambda,BestAlpha,BestTheta,BestS,BestF_U,Y_predict,BestIter,f_v] = GMVLF(X,X_l,Y_l,X_u,Y_u,Y_index,fea_num);
+    [Max_acc,BestBeta,BestDelta,BestLambda,BestAlpha,BestTheta,BestS,BestF_U,Y_predict,BestIter,f_v] = GMLVF(X,X_l,Y_l,X_u,Y_u,Y_index,fea_num);
     
     % save result
     save_path = ['../result/all_',num2str(i,'%02d')];
