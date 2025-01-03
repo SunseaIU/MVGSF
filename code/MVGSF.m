@@ -1,4 +1,4 @@
-function [Max_acc,BestBeta,BestDelta,BestLambda,BestAlpha,BestTheta,BestS,BestF_U,Y_predict,BestIter,f_v] = GMLVF(X,X_l,Y_l,X_u,Y_u,Y_index,d)
+function [Max_acc,BestBeta,BestDelta,BestLambda,BestAlpha,BestTheta,BestS,BestF_U,Y_predict,BestIter,f_v] = MVGSF(X,X_l,Y_l,X_u,Y_u,Y_index,d)
 % =========================================================================
 % Input:
 % X: n*d is the all data, which include source data and target data.
